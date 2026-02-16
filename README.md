@@ -49,6 +49,7 @@ The dataset contains crop production details for Tamil Nadu.
 Missing values in the Production column are removed before training.
 
 ⚙️ Project Workflow
+
 1️⃣ Data Preprocessing
 
 Load dataset using Pandas
@@ -57,18 +58,13 @@ Remove missing production values
 
 Convert Production into 3 classes using quantile-based binning:
 
-Low
-
-Medium
-
-High
+Low, Medium, High
 
 Encode categorical variables using LabelEncoder
 
 2️⃣ Feature Selection
 
 Input Features (X):
-
 State_Name
 District_Name
 Crop_Year
@@ -76,33 +72,24 @@ Season
 Crop
 Area
 
-
 Target (Y):
-
 Production_level
 
 3️⃣ Train-Test Split
 
 80% Training Data
-
 20% Testing Data
-
 Random State = 42
 
 4️⃣ Model Building
 
-Algorithm Used:
-
-DecisionTreeClassifier
-
-Max Depth = 10
+Algorithm Used : DecisionTreeClassifier
+                 Max Depth = 10
 
 5️⃣ Model Evaluation
 
 Accuracy Score
-
 Confusion Matrix
-
 Classification Report
 
 6️⃣ Decision Tree Visualization
@@ -114,13 +101,9 @@ The trained tree is visualized using plot_tree() from scikit-learn.
 The model prints:
 
 Accuracy Score
-
 Confusion Matrix
-
 Precision
-
 Recall
-
 F1-Score
 
 🧪 User Input Prediction
@@ -142,35 +125,17 @@ Predicted Production Level: Low / Medium / High
 
 ▶️ How to Run the Project
 
-Install required libraries:
-
-pip install pandas numpy matplotlib scikit-learn
-
+Install required libraries : pip install pandas numpy matplotlib scikit-learn
 
 Place TN yield data.csv in the same directory as the script.
 
-Run the Python file:
-
-python DSimp.py
-
+Run the Python file : python main_code.py
 
 Provide inputs when prompted.
 
 📁 Project Structure
-├── DSimp.py
+├── main_code.py
 ├── TN yield data.csv
+├── Tree Structure.png
 └── README.md
-
-📈 Future Improvements
-
-Use Random Forest or XGBoost for better accuracy
-
-Deploy using Flask or Streamlit
-
-Add feature importance analysis
-
-Improve handling of unseen categorical inputs
-
-👤 Author
-
-Machine Learning project for crop production classification using Decision Tree.
+ 
