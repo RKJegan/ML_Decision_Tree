@@ -65,31 +65,43 @@ Encode categorical variables using LabelEncoder
 2️⃣ Feature Selection
 
 Input Features (X):
+
 State_Name
+
 District_Name
+
 Crop_Year
+
 Season
+
 Crop
+
 Area
 
 Target (Y):
+
 Production_level
 
 3️⃣ Train-Test Split
 
 80% Training Data
+
 20% Testing Data
+
 Random State = 42
 
 4️⃣ Model Building
 
 Algorithm Used : DecisionTreeClassifier
-                 Max Depth = 10
+
+Max Depth = 10
 
 5️⃣ Model Evaluation
 
 Accuracy Score
+
 Confusion Matrix
+
 Classification Report
 
 6️⃣ Decision Tree Visualization
@@ -99,9 +111,13 @@ The trained tree is visualized using plot_tree() from scikit-learn.
 ✅ The model prints:
 
 Accuracy Score
+
 Confusion Matrix
+
 Precision
+
 Recall
+
 F1-Score
 
 🧪 User Input Prediction
@@ -109,9 +125,13 @@ F1-Score
 After training, the program allows user input:
 
 Enter District
+
 Enter Crop Year
+
 Enter Season
+
 Enter Crop Name
+
 Enter Area
 
 
